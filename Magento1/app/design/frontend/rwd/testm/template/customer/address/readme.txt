@@ -1,0 +1,3 @@
+If you want to display "Mobile number" value display in "Account Dashboard" inside Address Book. So, please follow these steps.
+................................................................................
+in the admin: system > configuration > (customers) customer configuration > address templates you'll find all the templates for the address. Then you can add in HTML section "{{depend mobile_number}}M: {{var mobile_number}}{{/depend}}<br/>"

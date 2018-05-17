@@ -1,0 +1,16 @@
+<?xml version="1.0"?>   
+<layout version="0.1.0"> 
+	<customer_account>			
+		<reference name="customer_account_navigation">
+			<action method="addLink" translate="label" module="discountcard"><name>discountcard</name><path>discountcard/index</path><label>Discount Cards</label></action>
+		</reference>
+	</customer_account>
+  <discountcard_index_index translate="label">   
+		<label>Customer Discount Cards</label>
+        <update handle="customer_account"/>     
+		<reference name="my.account.wrapper">  
+		  <block type="discountcard/index" name="discountcard_index" template="discountcard/index.phtml"/>   
+		</reference>  			
+  </discountcard_index_index>   
+</layout>   
+	
